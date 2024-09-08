@@ -1,4 +1,5 @@
 {
+    "homepage": "phakel21.cryptojump.github.io",
     "name": "template-react",
     "description": "A Phaser 3 project template that demonstrates React communication and uses Vite for bundling.",
     "version": "1.1.0",
@@ -13,7 +14,6 @@
     "bugs": {
         "url": "https://github.com/phaserjs/template-react/issues"
     },
-    "homepage": "https://github.com/phaserjs/template-react#readme",
     "keywords": [
         "phaser",
         "phaser3",
@@ -21,6 +21,8 @@
         "vite"
     ],
     "scripts": {
+        "predeploy": "npm run build",
+        "deploy": "gh-pages -d build",
         "dev": "vite --config vite/config.dev.mjs",
         "build": "vite build --config vite/config.prod.mjs"
     },
